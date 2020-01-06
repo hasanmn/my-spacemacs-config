@@ -329,6 +329,7 @@ you should place your code here."
   (define-key evil-insert-state-map (kbd "C-e") 'end-of-line) 
   (define-key evil-insert-state-map (kbd "C-j") 'next-line)   
   (define-key evil-insert-state-map (kbd "C-k") 'previous-line) 
+  (define-key global-map (kbd "M-y") 'helm-show-kill-ring)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
