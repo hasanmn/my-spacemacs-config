@@ -340,11 +340,18 @@ you should place your code here."
   (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
   (define-key evil-insert-state-map (kbd "C-d") 'evil-delete-char)
   (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line) ;; was 'evil-paste-last-insertion
+<<<<<<< HEAD
   (define-key evil-insert-state-map (kbd "C-e") 'end-of-line)
   ;; (define-key evil-insert-state-map (kbd "C-j") 'next-line)
   ;; (define-key evil-insert-state-map (kbd "C-k") 'previous-line)
   (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
   (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
+=======
+  (define-key evil-insert-state-map (kbd "C-e") 'end-of-line) 
+  (define-key evil-insert-state-map (kbd "C-j") 'next-line)   
+  (define-key evil-insert-state-map (kbd "C-k") 'previous-line) 
+  (define-key global-map (kbd "M-y") 'helm-show-kill-ring)
+>>>>>>> 65e05fd05fba9af9564d4e7bf183791ed8af16e0
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
